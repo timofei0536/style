@@ -1,0 +1,170 @@
+.best {
+	background: #f0ebe5;
+	padding-top:  17.5rem + 10.5rem;
+	position: relative;
+	padding-bottom:  20rem + 1rem ;
+	@include max-screen($small_tablet) {
+		padding-bottom: 0rem;
+		padding-top:  6rem + 8rem;
+	}
+
+	@include max-screen($large_mobile) {
+		padding-top:  6rem + 4rem;
+		padding-bottom: 4rem;
+	}
+
+	h2 {
+		@include min-screen($large_mobile) {
+			font-size: 6.2rem;
+			letter-spacing: 50 / 1000 * 1em;
+
+			span {
+				font-size: 3.25rem;
+				display: block;
+				margin-left: -0.1em;
+				margin-bottom: 1.5rem;
+				letter-spacing: 40 / 1000 * 1em;
+			}
+
+			margin-bottom: 8.5rem;
+		}
+
+		@include max-screen($small_tablet) {
+			font-size: 4rem;
+			span {
+				font-size: 2.06rem;
+			}
+		}
+
+		.simple-title__mobile3 {
+			margin-left: -0.2em;
+		}
+
+		@include max-screen($large_mobile) {
+			margin-bottom: 3rem;
+			em {
+				display: block;
+				&.simple-title__mobile {
+					&1 {
+						font-size: 2.06rem;
+					}
+					&2 {
+						font-size: 2.825rem;
+					}
+					&3 {
+						font-size: 2.18rem;
+						margin-left: 0.01em;
+					}
+				}
+			}
+		}
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		max-width: 124rem;
+		margin: 0px auto;
+		
+		@include max-screen(1550px) {
+			max-width: 110rem;
+		}
+
+		@include max-screen($large_tablet) {
+			max-width: 550px;
+			margin-left: auto;
+			position: relative;
+			left: 40px;
+		}
+
+		@include max-screen(650px) {
+			left: 0px;
+		}
+
+		@include max-screen($large_mobile) {
+			display: none;
+		}
+	}
+
+	&__slider {
+		@include min-screen($large_mobile) {
+			display: none;
+		}
+	}
+
+	&__item {
+		width: 33rem;
+		display: flex;
+		align-items: center;
+		margin-bottom: 8rem;
+		
+		@include max-screen($large_tablet) {
+			width: 50%;	
+			&:last-child {
+				display: none;
+			}
+		}
+
+		@include max-screen($large_mobile) {
+			width: 100%;
+			&:last-child {
+				display: flex;
+			}
+			margin-bottom: 4rem;
+		}
+
+
+
+		&-img {
+			margin-right: 3rem;
+			flex-shrink: 0;
+			width: 7rem;
+			display: flex;
+			justify-content: center;
+			@include max-screen($large_mobile) {
+				margin-right: 2rem;
+				width: 4rem;
+			}
+		}
+
+		&-text {
+			font-weight: 300;
+			font-size: 1.8rem;
+			line-height: 20 / 18 * 1;
+			color: #333333;
+
+			@include max-screen($large_desktop) {
+				font-size: 1.9rem;
+			}
+
+			@include max-screen($large_mobile) {
+				line-height: 20 / 17 * 1;
+				font-size: 1.7rem;
+			}
+		}
+	}
+
+	&__img {
+		position: absolute;
+		left: 0px;
+		transform: translate(-45%,-38%);
+		top: 50%;
+		z-index: 17;
+		
+		@include max-screen(1500px) {
+			max-width: 150px;
+		}
+
+		@include max-screen(650px) {
+			display: none;
+		}
+	}
+
+	&__grad {
+		position: absolute;
+		right: 0px;
+		top: 50%;
+		transform: translate(0,-50%);
+		max-height: 100%;
+	}
+}

@@ -1,0 +1,400 @@
+.main-screen {
+	background: #0e0e1a url('/img/main-screen__bg.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 11rem;
+	margin-top: -11.5rem;
+	padding-bottom: 11.5rem;
+	@include max-screen($small_tablet) {
+		position: relative;
+		padding-bottom: 0px;
+		overflow: hidden;
+	}
+	&__wrap {
+		padding-top: 11.5rem;
+		@media screen and ( max-height: 700px ) {
+			padding-top: 7rem;
+		}
+		@include max-screen($large_mobile) {
+			padding-top: 4.5rem ;
+		}
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 7rem;
+		@include max-screen($small_tablet) {
+			justify-content:  center;
+			padding-bottom: 0px;
+			margin-bottom: 25px;
+		}
+		@include max-screen($large_mobile) {
+			margin-bottom: 2.5rem;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		right:  3.3rem + 17.5rem + 2.5rem ;
+		width: 78.4rem;
+		bottom: -8rem;
+		z-index: -1;
+
+		@include max-screen($large_tablet) {
+			right: 15px;
+			width: 62%;
+		}
+
+
+		@include max-screen($small_tablet) {
+			position: relative;	
+			right: auto;
+			bottom: auto;
+			width: 140%;
+			max-width: 140%;
+			margin-bottom: -42%;
+			margin-left: -28%;
+		}
+
+		@include max-screen($large_mobile) {
+				width: 130%;
+			max-width: 140%;
+			margin-bottom: -42%;
+			margin-left: -22%;		
+		}
+
+	}
+
+	&__content {
+		padding-top: 1rem;
+		white-space: nowrap;
+		@include max-screen($small_tablet) {
+			padding-left: 1rem;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			white-space: nowrap;
+		}
+		@include max-screen($large_mobile) {
+			padding-left: 0px;
+		}
+		.btn {
+
+			@include max-screen($large_tablet) {
+				width: 96.5%;
+			}
+			@include max-screen($small_tablet) {
+				margin-left: 0.5%;
+			}
+
+			@include max-screen($large_mobile) {
+				font-size: 1.1rem;
+				padding: 0px;
+			}
+		}
+	}
+
+	&__title {
+		font-size: 7.67rem;
+		color: $green;
+		font-family: "Tragan";
+		text-transform: uppercase;
+		font-weight: 300;
+		line-height: 1.25;
+		letter-spacing: 25 / 1000 * 1em;
+		span {
+			font-size: 8.55rem;
+			letter-spacing: 40 / 1000 * 1em;
+			margin-left: -0.05em;
+		}
+		@include max-screen($large_tablet) {
+			font-size: 6.9rem;
+			span {
+				font-size: 7.6rem;
+			}
+		}
+		@include max-screen($small_tablet) {
+			font-size: 11rem;
+			span {
+				font-size: 12.1rem;
+			}
+		}
+		@include max-screen($large_mobile) {
+			font-size: 4.55rem;
+			span {
+				font-size: 5.1rem;
+			}
+		}
+	}
+
+	&__sub-title {
+		&1 {
+			color: #f7f7f7;
+			font-size: 2.92rem;
+			text-transform: uppercase;
+			font-family: "Tragan";
+			margin-bottom: 3.5rem;
+			letter-spacing: 30 / 1000 * 1em;
+			font-weight: 300;
+			@include max-screen($large_tablet) {
+				font-size: 2.61rem;
+			}
+			@include max-screen($small_tablet) {
+				font-size: 4.2rem;
+			}
+
+			@include max-screen($large_mobile) {
+				font-size: 1.75rem;
+				margin-bottom: 1rem;
+			}
+		}
+
+		&2 {
+			color: #f7f7f7;
+			font-size: 2.42rem;
+			text-transform: uppercase;
+			font-family: "Tragan";
+			font-weight: 300;
+			margin-top: 0.5rem;
+			margin-bottom: 3.8rem;
+			letter-spacing: 40 / 1000 * 1em;
+			@include max-screen($large_tablet) {
+				font-size: 2.15rem;
+			}
+			@include max-screen($small_tablet) {
+				font-size: 3.4rem;
+			}		
+			@include max-screen($large_mobile) {
+				font-size: 1.4rem;
+				margin-top: -0.3rem;
+				margin-bottom: 3rem;
+				position: relative;
+				z-index: 2;
+			}	
+			> span {
+				color: $green-l;
+				font-size: 1.4em;
+				padding-right: 0.3em;
+				position: relative;
+				@include max-screen($large_mobile) {
+					position: static;
+				}
+			}
+		}
+	}
+
+	&__features {
+		display: flex;
+		flex-direction: column;
+		@include max-screen($large_tablet) {
+			display: none;
+		}
+	}
+
+	&__feature {
+		margin-bottom: 6.3rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		&:last-child {
+			margin-bottom: 0px;
+		}
+
+		&-img {
+			margin-bottom: 1.5rem;
+		}
+
+		&-title {
+			font-size: 1.6rem;	
+			color: $green;
+			font-weight: 500;
+			margin-bottom: 0.5rem;
+			letter-spacing: 0.04em;
+		}
+
+		&-text {
+			color: #f8f8f8;
+			font-weight: 300;
+			font-size: 1.7rem;
+			line-height: 20 / 17 * 1;
+			letter-spacing: 0.04em;
+		}
+	}
+
+	&__rewards {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px calc( 32px + 5rem );
+		padding-bottom: 1rem;
+
+		@include max-screen($large_tablet) {
+			padding-left: calc( 15px + 5rem );
+			padding-right: calc( 15px + 5rem );
+		}
+
+		@include max-screen($small_tablet) {
+			padding: 0px;
+			position: relative;
+			padding:  8rem + 5rem  0px;
+			z-index: 2;
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: 0px;
+				width: 100vw;
+				transform: translate(-50%,0%);
+				left: 50%;
+				height: 50%;
+				background: url('/img/rewards__bg.png') no-repeat;
+				background-position: bottom left;
+				background-size: 100% auto;
+				z-index: -1;
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0px;
+				width: 100vw;
+				transform: translate(-50%,0%);
+				left: 50%;
+				height: 50%;
+				background: url('/img/rewards__bg.png') no-repeat;
+				background-position: top left;
+				background-size: 100% auto;
+				z-index: -1;
+			}
+		}
+		@include max-screen($large_mobile) {
+			padding: 4rem 0px;			
+			align-items: flex-end;
+			width: calc( 100% + 20px );
+			left: -10px;
+		}
+
+
+		&-bg {
+			width: 100%;
+			z-index: 2;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+		}
+	}
+
+	&__reward {
+		display: flex;
+		align-items: center;
+		width: calc( ( 100% - 25px * 3  ) / 4 );
+		white-space: nowrap;
+		
+		@include max-screen($small_tablet) {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&:nth-child(2) {
+			br {
+				&.desktop {
+					@include max-screen($large_mobile) {
+						display: none;
+					}
+				}
+
+				&.mobile {
+					@include min-screen($large_mobile) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		@include max-screen($large_mobile) {
+			width: auto;
+		}
+		
+		&-img {
+			flex-shrink: 0;
+			min-width: 7rem;
+			margin-right: 1.2rem;
+			@include max-screen($small_tablet) {
+				margin-right: 0px;
+				margin-bottom: -1rem;
+			}
+
+			@include max-screen($large_mobile) {
+				margin-bottom: 0rem;
+				min-width: 1px;
+			}
+		}
+		
+		&:nth-child(1) {
+
+			@include max-screen($large_mobile) {
+				order: 2;
+				margin-bottom: -0.2rem;
+			}
+			& .main-screen__reward-text {
+				color: $green;
+				font-size: 1.8rem;
+				font-family: "Tragan";
+				margin-top: 2rem;
+				@include max-screen($small_tablet) {
+					font-size: 3.2rem;
+				}
+				@include max-screen($large_mobile) {
+					font-size: 1.8rem;
+					margin-top: 0px;
+					line-height: 21 / 18 * 1;
+				}
+			}
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: 100%;
+				background: url('/img/main-screen__reward-overlay.png') no-repeat;
+				background-size: contain;
+				z-index: 2;
+				@include max-screen($small_tablet) {
+					display: none;
+				}
+			}
+		}
+
+		&:nth-child(3) {
+			@include max-screen($large_mobile) {
+				order: 3;
+			}
+		}
+		@include max-screen($large_mobile) {
+			&:nth-child(4) {
+				display: none;
+			}
+		}
+
+		&-text {
+			font-size: 1.6rem;
+			font-weight: 300;
+			line-height: 20 / 16 * 1;
+			color: #fff;
+			@include max-screen($small_tablet) {
+				text-align: center;
+				margin-top: 1rem;
+				font-size: 2.2rem;
+			}
+			@include max-screen($large_mobile) {
+				font-size: 1.4rem;
+				margin-top: 0px;
+				line-height: 20 / 14 * 1;
+			}
+		}
+	}
+}

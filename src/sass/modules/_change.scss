@@ -1,0 +1,233 @@
+.change {
+	overflow: hidden;
+	margin-top: -22rem;
+	@include max-screen($small_tablet) {
+		margin-top: 0px;
+		background: #f2eee9;
+		position: relative;
+		z-index: 22;
+	}
+
+	@include max-screen($large_mobile) {
+		background: #f6f6ec;
+	}
+	&__wrap {
+		background: #f2eee9;
+		padding-left: 32px;
+		padding-right: 32px;
+		padding-top: 20rem;
+		box-shadow: 0px 49px 106px 0px rgba(0, 4, 7, 0.1);
+		@include max-screen($large_tablet) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		@include max-screen($small_tablet) {
+			padding-left: 10px;
+			padding-right: 10px;
+			box-shadow: none;
+			margin-top: 0px;
+			padding: 0px;
+			padding-bottom:  8rem - 4rem ;
+			margin-top: 0px;
+		}
+
+		@include max-screen($large_mobile) {
+			background: #f6f6ec;
+			padding-bottom: 0px;
+		}
+
+		position: relative;
+	}
+
+	&__bg {
+		position: absolute;
+		top: 56%;
+		left: 50%;
+		width: 98rem;
+		transform: translate(-50%,-50%);
+		opacity: 0.04;
+		max-width: 90%;
+		@include max-screen($small_tablet) {
+			transform: translate(0%,0%);
+			max-width: 98rem;
+			width: 260%;
+			max-height: 90%;
+			top: 2rem;
+			left: -28%;
+		}
+	}
+
+	.simple-title  {
+
+		h2 {
+
+			@include min-screen($large_mobile) {
+				margin-top: 9rem;
+				font-size: 4.8rem;
+				letter-spacing: 40 / 1000 * 1em;
+				margin-bottom: 8.5rem;
+				position: relative;
+				span {
+					font-size: 3.9rem;
+					letter-spacing: 45 / 1000 * 1em;
+					display: block;
+					margin-bottom: 0.4rem;
+				}
+			}
+
+			@include max-screen($small_tablet) {
+				font-size: 3rem !important;
+				margin-top: 8rem;
+				margin-bottom: 7rem;
+				span {
+					font-size: 2.45rem;
+				}
+			}
+
+			@include max-screen($large_mobile) {
+				margin-top: 3.5rem;
+				margin-bottom: 3rem;
+				em {
+					display: block;
+					&.simple-title__mobile {
+						&1 {
+							font-size: 2.1rem;
+						}
+
+						&2 {
+							font-size: 2.4rem;
+						}
+
+						&3 {
+							font-size: 2.14rem;		
+						}
+
+						&4 {
+							font-size: 3.87rem;		
+						}
+					}
+				}
+			}
+
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 8rem;
+			height: 1px;
+			top: 50%;
+			background: $green;
+			left: calc( ( 100% - 110rem ) / 2  );
+
+			@include max-screen($large_tablet) {
+				display: none;
+			}
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 8rem;
+			height: 1px;
+			top: 50%;
+			background: $green;
+			right: calc( ( 100% - 110rem ) / 2  );
+			@include max-screen($large_tablet) {
+				display: none;
+			}
+		}
+
+
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		max-width: 110rem;
+		margin: 0px auto;
+		@include max-screen($large_tablet) {
+			max-width: 680px;
+		}
+		@include max-screen($small_tablet) {
+			flex-direction: column;
+			max-width: 360px;
+		}
+
+		@include max-screen($large_mobile) {
+			max-width: 100%;
+		}
+	}
+
+	&__item {
+		max-width: 51rem;
+		width: calc( 50% - 20px );
+		display: flex;
+		align-items: center;
+		margin-bottom: 7.5rem;
+
+		@include max-screen($large_tablet) {
+			br {
+				display: none;
+			}
+		}
+
+		@include max-screen($small_tablet) {
+			width: 100%;
+			max-width: 100%;
+			br {
+				display: block;
+			}
+			margin-bottom: 4rem;
+		}
+
+		@include max-screen($large_mobile) {
+			margin-bottom: 3.2rem;
+		}
+
+		&-text {
+			font-size: 2.7rem;
+			line-height: 1.1;
+			color: #333333;
+			@include max-screen($large_tablet) {
+				font-size: 2.5rem;
+			}
+			@include max-screen($large_mobile) {
+				font-size: 1.7rem;
+			}
+
+		}
+
+		&-img {
+			width: 13rem;
+			border: 1px solid #58514d;
+			border-radius: 50%;
+			position: relative;
+			flex-shrink: 0;
+			margin-right: 3.4rem;
+			flex-shrink: 0;
+			
+			@include max-screen($large_tablet) {
+				width: 10rem;
+			}
+
+			@include max-screen($large_mobile) {
+				width: 6rem;
+				margin-right: 1.5rem;
+			}
+			> div {
+				padding-bottom: 100%;
+				width: 100%;
+				picture {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%,-50%);
+					max-width: 50%;
+				}
+			}
+		}
+	}
+}

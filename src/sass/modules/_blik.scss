@@ -1,0 +1,37 @@
+.blik {
+	position: relative;
+	font-style: normal;
+	&::before {
+		content: '';
+		position: absolute;
+		background: url('/img/blik.png') no-repeat;
+		background-position: center;
+		background-size: contain;
+		width: 10em;
+	}
+
+	&--a {
+		&::before {
+			width: 0.9em;
+			height: 0.9em;
+			top: 0.08em;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+	}
+
+	&--q {
+		&::before {
+			width: 1.15em;
+			height: 1.15em;
+			top: 0.01em;
+			right: 0.02em;
+			transform: translate(42%,-50%);
+			@include max-screen($small_tablet) {
+				transform: translate(32%,-50%);
+				width: 1em;
+				height: 1em;
+			}
+		}		
+	}
+}

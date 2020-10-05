@@ -1,0 +1,38 @@
+.video {
+    padding-left: 534px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    &:hover {
+        .video {
+            &__video {
+                display: block;
+            }
+        }
+    }
+
+    &__play {
+        background: url('/img/reviews-img.png') center no-repeat;
+        cursor: pointer;
+        width: 534px;
+        height: 363px;
+        position: absolute;
+        left: calc(534px / 2);
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s;
+        overflow: hidden;
+    }
+
+    &__video {
+        width: 1000px;
+        height: 1000px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        pointer-events: none;
+    }
+}

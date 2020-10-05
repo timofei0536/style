@@ -1,0 +1,140 @@
+.calc {
+
+	background: url('/img/calc__bg.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+	@include min-screen($small_tablet) {
+		background: transparent !important;
+	}
+
+	&__wrap {
+		background: #f6f5f4;
+		padding: 0px 6rem;
+		margin-top: -20rem;
+		padding-top: 8rem;
+		box-shadow: 0px 49px 106px 0px rgba(0, 4, 7, 0.1);
+		padding-bottom: 2.5rem;
+		min-height: 40rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 1340px;
+
+
+		@include max-screen($large_tablet) {
+			padding-left: 4rem;
+			padding-right: 4rem;
+			padding-top: 5rem;
+			min-height: 37rem;
+		}
+		
+		@include max-screen($small_tablet) {
+			margin-top: 0px;	
+			background: transparent;
+			padding: 0rem;	
+			padding-top: 8rem;	
+			padding-bottom: 6rem;
+			box-shadow: none;
+		}
+
+		@include max-screen($large_mobile) {
+			padding-top: 4rem;
+			padding-bottom: 2rem;
+		}
+
+	}
+
+	.simple-title {
+
+		h2 {
+			font-size: 3.6rem;
+			max-width: 1100px;
+			margin-bottom: 5rem;
+
+			@include max-screen($large_tablet) {
+				font-size: 3rem;
+			}
+
+			@include max-screen($large_tablet) {
+				span {
+					display: none;
+				}
+			}
+
+			@include max-screen($small_tablet) {
+				color: $green;
+			}
+
+			@include max-screen($large_mobile) {
+				margin-bottom: 3rem;
+			}
+		}
+
+		&__mobile {
+			&1 {
+				font-size: 5rem;
+				display: block;
+				@include min-screen($large_tablet) {
+					display: none;
+				}
+
+				@include max-screen($small_tablet) {
+					font-size: 5.2rem;
+				}
+
+				@include max-screen($large_mobile) {
+					font-size: 2.2rem;
+				}
+			}
+
+			&2 {
+				font-size: 3.2rem;
+				display: block;
+				@include min-screen($large_tablet) {
+					display: none;
+				}
+
+				@include max-screen($small_tablet) {
+					font-size: 3.3rem;
+				}
+
+				@include max-screen($large_mobile) {
+					font-size: 1.39rem;
+				}
+			}
+		}
+	}
+
+	&__form {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+		.btn {
+			@include max-screen($large_tablet) {
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+		}
+
+		@include max-screen($small_tablet) {
+			flex-direction: column;
+			.inputs {
+				&__field-wrap {
+					width: 100%;
+				}
+
+				&__personal {
+					color: #fff !important;
+					opacity: 0.5;
+				}
+
+				&__content {
+					color: #fff !important;
+				}
+			}
+		}
+	}
+}

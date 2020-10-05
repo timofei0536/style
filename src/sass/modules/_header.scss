@@ -1,0 +1,107 @@
+.header {
+	padding-top: 3.7rem;
+	height: 11.5rem;
+	@include max-screen($large_mobile) {
+		padding-top: 2.5rem;
+	}
+
+
+
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.header_thank & {
+			@include max-screen($large_tablet) {
+				justify-content: center;
+				.header__text {
+					margin-right: 0px;
+				}
+			}
+		}
+
+		@include max-screen($large_mobile) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	&__logo {
+		@include max-screen($large_mobile) {
+			max-width: 3.3rem;
+		}
+	}
+
+	&__text {
+		margin-right: auto;
+		margin-left: 1.7rem;
+		padding-top: 1.2rem;
+		@include max-screen($large_mobile) {
+			margin-right: 0px;
+			padding-top: 0.4rem;
+		}
+		p {
+			font-size: 3rem;
+			text-transform: uppercase;
+			color: #f8f8f8;
+			font-family: "Tragan";
+			font-weight: 300;
+			letter-spacing: 40 / 1000 * 1em;
+			@include max-screen($large_mobile) {
+				font-size: 1.5rem;
+				margin-top: 0.5rem;
+			}
+
+			.header_thank & {
+				color: #333;
+			}
+		}
+
+		span {
+			font-size: 2.14rem;
+			letter-spacing: 65 / 1000 * 1em;
+			color: #c5b79d;
+			font-weight: 300;
+			.header_thank & {
+				color: #333;
+			}
+			@include max-screen($large_mobile) {
+				font-size: 1.07rem;
+			}
+		}
+	}
+
+	&__phone {
+		display: flex;
+		flex-direction: column;
+		padding-top: 0.7rem;
+		@include max-screen($large_mobile) {
+			margin-top: 2.8rem;
+		}
+		a {
+			font-size: 2.2rem;
+			color: #f8f8f8;
+			margin-bottom: 1.1rem;
+			font-family: "Tragan";
+			letter-spacing: 25 / 1000 * 1em;
+			@include max-screen($large_mobile) {
+				font-size: 2.4rem;
+			}
+		}
+
+		.btn {
+			text-transform: initial;
+			line-height: 30px;
+			padding: 0px 2.8rem;
+			padding-bottom: 1px;
+			font-weight: 500;
+			font-size: 1.6rem;
+			letter-spacing: 0px;
+			@include max-screen($large_mobile) {
+				display: none;
+			}
+		}
+	}
+
+}

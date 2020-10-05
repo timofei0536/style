@@ -1,0 +1,174 @@
+.step {
+	width: 100%;
+	background: url('/img/step__bg.png') no-repeat;
+	background-size: cover;
+	padding: 4.5rem 6rem;
+	padding-bottom: 1rem;
+	@include max-screen($large_mobile) {
+		background: url('/img/step__bg_mobile.png') no-repeat;
+		background-size: cover;
+		padding: 20px;
+		padding-top: 5.5rem;
+		padding-bottom: 0.6rem;
+	}
+
+	.simple-title {
+		justify-content: flex-start;
+		text-align: left;
+		@include max-screen($large_mobile) {
+		}
+		h2 {
+			font-size: 3rem;
+			color: $green;
+			font-family: "Tragan";
+			font-weight: 300;
+			text-transform: uppercase;
+			margin-bottom: 1.6rem;
+
+			span {
+				@include max-screen($large_mobile) {
+					display: none;
+				}
+			}
+		}
+
+		&__mobile {
+			&1 {
+				@include min-screen($large_mobile) {
+					display: none;
+				}
+				display: block;
+				font-size: 2.35rem;
+			}
+
+			&2 {
+				@include min-screen($large_mobile) {
+					display: none;
+				}
+				display: block;
+				font-size: 2.25rem;
+				
+			}
+
+			&3 {
+				@include min-screen($large_mobile) {
+					display: none;
+				}
+				display: block;
+				font-size: 1.5rem;
+			}
+		}
+	}
+	&__sub-title {
+		color: #fdfdfd;
+		font-size: 2.1rem;
+		font-weight: 300;
+		line-height: 1.1;
+		margin-bottom: 2.7rem;
+		@include max-screen($large_mobile) {
+			display: none;
+		}
+	}
+
+	&__bonuse {
+		display: flex;
+		align-items: center;
+		margin-bottom: 3rem;
+		p {
+			font-size: 1.8rem;
+			line-height: 1;
+			text-transform: uppercase;
+			color: #fff;
+			font-weight: 500;
+			margin-bottom: 0.5rem;
+			@include max-screen($large_mobile) {
+				display: none;
+			}
+		}
+
+		span {
+			font-size: 1.8rem;
+			color: $green;
+			font-weight: 300;
+			line-height: 1;
+			white-space: nowrap;
+			
+			@include max-screen($large_mobile) {
+				font-size: 1.5rem;
+				color: #fff;
+				line-height: 1.2;
+				margin-top: -0.3rem;
+				margin-bottom: -0.3rem;
+				display: block;
+			}
+			em {
+				font-style: normal;
+			}
+
+			.desktop {
+				@include max-screen($large_mobile) {
+					display: none;
+				}
+			}
+
+			.mobile {
+				@include min-screen($large_mobile) {
+					display: none;
+				}
+			}
+		}
+
+		&-plus {
+			width: 2.2rem;
+			height: 2.2rem;
+			position: relative;
+			margin-right: 2rem;
+			flex-shrink: 0;
+			@include max-screen($large_mobile) {
+				width: 1.7rem;
+				height: 1.7rem;
+				margin-right: 0.8rem;
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				width: 2px;
+				height: 100%;
+				background: #fff;
+				left: calc( 50% - 1px );
+				top: 0px;
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				background: #fff;
+				left: 0px;
+				top: calc( 50% - 1px );
+			}
+		}
+
+		&-content {			
+			background: url('/img/step__bonuse.png') no-repeat;
+			background-position: left center;
+			padding-left: 5rem;
+			background-size: contain;
+			@include max-screen($large_mobile) {
+				padding-left: 4rem;
+			}
+		}
+	}
+
+	.inputs {
+		width: 40rem;
+		@include max-screen($large_mobile) {
+			width: 100%;
+		}
+		&__personal {
+			font-weight: 300;
+			padding-bottom: 0px;
+		}
+	}
+}

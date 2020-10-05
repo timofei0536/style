@@ -1,0 +1,155 @@
++b.SECTION.how
+	.wrap
+		+e.top
+			.simple-title 
+				h2 
+					<em class='simple-title__mobile1'>Как будет</em>
+					<em class='simple-title__mobile2'>проходить<br> шопинг</em>
+			+e.nav
+				+e.nav-wrap
+					+e.nav-item._active <span>кратко</span>
+					+e.nav-item <span>Подробно</span>
+				+e.nav-prompt переключите вкладку
+		+e.wrap
+			+e.list
+				+e.item
+					+e.item-img
+						span 1
+						img(src='/img/how1.png')
+					+e.item-content
+						+e.item-title Консультация
+						+e.P.item-more(data-how='1') Подробнее
+						+e.item-list
+							+e.P.item-item личная встреча 
+							+e.P.item-item определение результата<br> работы над стилем
+							+e.P.item-item анализ вашего типажа<br> и образа жизни
+							+e.P.item-item составление списка покупок
+							+e.P.item-item выбор места для шопинга
+							+e.P.item-item подсчет бюджета на покупки
+				+e.sep
+				+e.item
+					+e.item-img
+						span 2
+						img(src='/img/how2.png')
+					+e.item-content
+						+e.item-title Покупка
+						+e.P.item-more(data-how='2') Подробнее
+						+e.item-list
+							+e.P.item-item примерка вещей 
+							+e.P.item-item выбор и покупка<br> понравившихся образов
+							+e.P.item-item дополнение образов<br> аксессуарами
+							+e.P.item-item вы получите максимальные<br> скидки по дисконтным<br> картам
+				+e.sep
+				+e.item
+					+e.item-img
+						span 3
+						img(src='/img/how3.png')
+					+e.item-content
+						+e.item-title Подшив вещей
+						+e.P.item-more(data-how='3') Подробнее
+						+e.item-list
+							+e.P.item-item доработка одежды в ателье<br> до идеальной посадки
+							+e.P.item-item повторная примерка вещей<br> для контроля портных
+							+e.P.item-item вещи будут сидеть, как<br> будто они сшиты для вас<br> на заказ
+				+e.sep
+				+e.item
+					+e.item-img
+						span 4
+						img(src='/img/how4.png')
+					+e.item-content
+						+e.item-title Персональные<br> рекомендации
+						+e.P.item-more(data-how='4') Подробнее
+						+e.item-list
+							+e.P.item-item составление комплектов<br> из купленных вещей
+							+e.P.item-item советы по прическе
+							+e.P.item-item выбор парфюма
+							+e.P.item-item советы по уходу за одеждой
+				+e.sep
+				+e.item
+					+e.item-img
+						span 5
+						img(src='/img/how5.png')
+					+e.item-content
+						+e.item-title Онлайн–<br>поддержка
+						+e.P.item-more(data-how='5') Подробнее
+						+e.item-list
+							+e.P.item-item общение в мессенджере
+							+e.P.item-item вы можете задать вопрос<br> по купленным вещам	<br> и комплектам
+							+e.P.item-item помощь в магазине<br> при самостоятельном<br> шопинге
+							+e.P.item-item рекомендации стилиста<br> по волосам, барбера,<br> фотографа и других<br> специалистов
+				+e.item._hide
+			+e.slider
+				+e.slider-close
+					div
+					div
+				.swiper-container
+					.swiper-wrapper
+						.swiper-slide
+							+e.item
+								+e.item-img
+									span 1
+									img(src='/img/how1.png')
+								+e.item-title Консультация
+								+e.P.item-more Подробнее
+								+e.item-list
+									+e.P.item-item личная встреча 
+									+e.P.item-item определение результата работы над стилем
+									+e.P.item-item анализ вашего типажа и образа жизни
+									+e.P.item-item составление списка покупок
+									+e.P.item-item выбор места для шопинга
+									+e.P.item-item подсчет бюджета на покупки
+						.swiper-slide
+							+e.item
+								+e.item-img
+									span 2
+									img(src='/img/how2.png')
+								+e.item-title Покупка
+								+e.P.item-more Подробнее
+								+e.item-list
+									+e.P.item-item примерка вещей 
+									+e.P.item-item выбор и покупка понравившихся образов
+									+e.P.item-item дополнение образов аксессуарами
+									+e.P.item-item вы получите максимальные скидки по дисконтным картам
+						.swiper-slide
+							+e.item
+								+e.item-img
+									span 3
+									img(src='/img/how3.png')
+								+e.item-title Подшив вещей
+								+e.P.item-more Подробнее
+								+e.item-list
+									+e.P.item-item доработка одежды в ателье до идеальной посадки
+									+e.P.item-item повторная примерка вещей для контроля портных
+									+e.P.item-item вещи будут сидеть, как будто они сшиты для вас на заказ
+						.swiper-slide
+							+e.item
+								+e.item-img
+									span 4
+									img(src='/img/how4.png')
+								+e.item-title Персональные<br> рекомендации
+								+e.P.item-more Подробнее
+								+e.item-list
+									+e.P.item-item составление комплектов из купленных вещей
+									+e.P.item-item советы по прическе
+									+e.P.item-item выбор парфюма
+									+e.P.item-item советы по уходу за одеждой
+						.swiper-slide
+							+e.item
+								+e.item-img
+									span 5
+									img(src='/img/how5.png')
+								+e.item-title Онлайн–<br>поддержка
+								+e.P.item-more Подробнее
+								+e.item-list
+									+e.P.item-item общение в мессенджере
+									+e.P.item-item вы можете задать вопрос по купленным вещам и комплектам
+									+e.P.item-item помощь в магазине при самостоятельном шопинге
+									+e.P.item-item рекомендации стилиста по волосам, барбера, фотографа и других специалистов	
+				+b.slider-nav._dark
+					+e.arrow._prev
+						+icon('arrow-left_mobile')
+					+e.bullets
+					+e.arrow._next
+						+icon('arrow-right_mobile')
+			+e.btn
+				span.btn(onclick='show_popup("popup2")') <em class='how__arrow-bag'></em> Связаться с александром беловым

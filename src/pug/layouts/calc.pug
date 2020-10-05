@@ -1,0 +1,20 @@
++b.SECTION.calc
+	.wrap
+		+e.wrap
+			.simple-title
+				h2 
+					span Рассчитайте стоимость вашего шопинга. Оставьте контакты в форме ниже
+					em.simple-title__mobile1 Оставьте контакты, 
+					em.simple-title__mobile2 чтобы рассчитать стоимость
+
+			form.calc__form.inputs.inputs_dark(action='', autocomplete='off')
+				.inputs__field-wrap
+					span.inputs__content Ваше имя
+					input.inputs__field(type='text', name='text', required='', minlength='2', placeholder="Олег Николаевич")
+				.inputs__field-wrap
+					span.inputs__content Номер для связи*
+					input.inputs__field(type='tel', name='phone', required='' placeholder="+7 123 456-78-90")
+				.inputs__field-wrap
+					span.inputs__content.inputs__content_hide Кнопка
+					input.inputs__field.inputs__submit.btn.thank-link(type='submit', value='рассчитать стоимость') 
+					span.inputs__personal Нажимая на кнопку, вы даете согласие на обработку персональных данных.

@@ -1,0 +1,50 @@
+.btn {
+	// background: $green-g;
+	color: #000;
+	border-radius: 4px;
+	padding: 0px 4rem;
+	line-height: 6.8rem;
+	padding-top: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 800;
+	position: relative;
+	cursor: pointer;
+	border: none;
+	color: $black;
+	display: inline-block;
+	font-weight: 800;
+	white-space: nowrap;
+	letter-spacing: 0.1em;
+	box-shadow: 0px 16px 27px 0px rgba(0, 4, 7, 0.1);
+	transition: all 0.5s;
+	background-image: linear-gradient(90deg, rgba(207,159,96,1) 5%, rgba(245,213,160,1) 50%, rgba(207,159,96,1) 95%);
+	background-size: 100% 100%;
+	background-position: 50%;
+	&:hover {
+		background-size: 200% 100%;
+	}
+
+	@include max-screen($large_mobile) {
+		line-height: 5rem;
+		font-size: 1.2rem;
+	}
+
+	@include max-screen($small_mobile) {
+		line-height: 5.8rem;
+		font-size: 1.4rem;
+	}
+	&_empty {
+		background: transparent;
+		border: 1px solid transparent;
+		&.btn_green {
+			color: $green;
+			border-color: $green;
+			&:hover {
+				background: $green;
+				color: #000;
+			}
+		}
+	}
+}

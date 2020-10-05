@@ -1,0 +1,80 @@
++b.SECTION.reviews
+    .wrap
+        +e.wrap
+            +e.IMG.bg(src='/img/reviews__bg.png')
+            .simple-title
+                h2
+                    span 
+                        <em class='simple-title__mobile1'>Они уже создали</em>
+                        <em class='simple-title__mobile2'>идеальные образы</em>
+                    <em class='simple-title__mobile3'>C Александром Беловым</em>
+            +e.slider
+                .swiper-container
+                    .swiper-wrapper
+                        .swiper-slide
+                            +e.item
+                                +e.info
+                                    +e.P.name Роман<br> Решетников
+                                    +e.P.profes иллюзионист
+                                    +e.A(href='https://www.instagram.com/reshetnikov_r/', target='_blank').social
+                                        img(src='/img/reviews-social.png')
+                                        p @roman_resh
+                                    +e.P.text "После работы с Александром получился абсолютно новый образ, я стал лучше запоминаться для зрителей и начал получать больше заказов на выступления."
+                                +e.item-video
+                                    div
+                                        img(src='/img/reviews1.png') 
+                                        +e.A.item-play.fancybox(data-fancybox-type="iframe" href="https://www.youtube.com/embed/miCRU9_KuNg")
+                        .swiper-slide
+                            +e.item
+                                +e.info
+                                    +e.P.name Данила<br> Медведев
+                                    +e.P.profes телеведущий 
+                                    +e.A(href='https://russia.tv/person/show/person_id/105289/', target='_blank').social
+                                        img(src='/img/reviews-social.png')
+                                        p @roman_resh
+                                    +e.P.text "Александр Белов сэкономил мне огромное количество денег. Мой внешний вид стал соответствовать моему внутреннему миру."
+                                +e.item-video
+                                    div
+                                        img(src='/img/reviews2.png') 
+                                        +e.A.item-play.fancybox(data-fancybox-type="iframe" href="https://www.youtube.com/embed/1Gk01kXGbV4")
+
+                        .swiper-slide 
+                            +e.item
+                                +e.info
+                                    +e.P.name Леонид<br> Васильев
+                                    +e.P.profes владелец магазина
+                                    +e.A(href='https://www.instagram.com/leonid.vasiliev/', target='_blank').social
+                                        img(src='/img/reviews-social.png')
+                                        p @roman_resh
+                                    +e.P.text "Среди 6000 моделей запонок мы с Александром согласовали ассортимент магазина, за что ему благодарен."
+                                +e.item-video
+                                    div
+                                        img(src='/img/reviews3.png')
+                                        +e.A.item-play.fancybox(data-fancybox-type="iframe" href="https://www.youtube.com/embed/u2UMwj7cLY0")
+                        .swiper-slide 
+                            +e.item
+                                +e.info
+                                    +e.P.name Юрий<br> Астафьев
+                                    +e.P.profes руководитель банка
+                                    +e.A(href='https://vk.com/jastafiev', target='_blank').social
+                                        img(src='/img/reviews-social.png')
+                                        p @roman_resh
+                                    +e.P.text "Мне часто говорят, что я стильный. Поначалу это было необычно, но теперь это стало частью меня."
+                                +e.item-video
+                                    div
+                                        img(src='/img/reviews4.png') 
+                                        +e.A.item-play.fancybox(data-fancybox-type="iframe" href="https://www.youtube.com/embed/9X95C-RFyOw")
+
+                    +e.row
+                        +e.btns
+                            +e.btn._prev
+                                +icon('arrow-left')
+                            +e.btn._next
+                                +icon('arrow-right')
+                        .swiper-pagination
+                +b.slider-nav
+                    +e.arrow._prev
+                        +icon('arrow-left_mobile')
+                    +e.bullets
+                    +e.arrow._next
+                        +icon('arrow-right_mobile')

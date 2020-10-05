@@ -1,0 +1,276 @@
+.tw {
+	position: relative;
+	z-index: 20;
+	overflow: hidden;
+	margin-top: -16.5rem;
+	@include max-screen($small_tablet) {
+		margin-top: 0rem;
+	}
+
+	&__wrap {
+		background: #181a26;
+		padding-top: 10rem;
+		
+		padding-bottom: 10rem;
+		@include max-screen($small_tablet) {
+			padding-top: 8rem;
+			padding-bottom: 8rem;
+		}
+
+		@include max-screen($large_mobile) {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+			background: transparent;
+		}
+
+	}
+
+	> .wrap,
+	&__wrap > .wrap:last-child {
+		@include max-screen($large_mobile) {
+			max-width: 100%;
+			padding: 0px;
+		}
+	}
+
+	.simple-title {
+		margin-bottom: 7rem;
+		@include max-screen($large_mobile) {
+			margin-bottom: 3rem;
+		}
+
+		h2 {
+			font-size: 4.8rem;
+			color: $green;
+			max-width: 68rem;
+			letter-spacing: 25 / 1000 * 1em;
+			@include max-screen($small_tablet) {
+				font-size: 4rem;
+			}
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			width: 13.5rem;
+			height: 1px;
+			top: 40%;
+			background: $green;
+			left: calc( ( 100% - 109rem ) / 2  );
+			@include max-screen($large_tablet) {
+				left: 0px;
+			}
+
+			@include max-screen($large_tablet) {
+				width: 8rem;
+			}
+
+			@include max-screen($small_tablet) {
+				display: none;
+			}
+
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 13.5rem;
+			height: 1px;
+			top: 40%;
+			background: $green;
+			right: calc( ( 100% - 109rem ) / 2  );
+			@include max-screen($large_tablet) {
+				right: 0px;
+			}
+
+			@include max-screen($large_tablet) {
+				width: 8rem;
+			}
+
+			@include max-screen($small_tablet) {
+				display: none;
+			}
+		}
+
+		&__mobile {
+			&1 {
+				@include max-screen($large_mobile) {
+					font-size: 2.2rem;
+					display: block;
+				}
+			}
+
+			&2 {
+				@include max-screen($large_mobile) {
+					font-size: 2rem;
+					display: block;
+				}
+			}
+		}
+	}
+
+	&__bg {
+		position: absolute;
+		max-width: 3000px;
+		left: 50%;
+		top: 115px;
+		transform: translate(-50%,0px);
+		
+		@include max-screen($large_desktop) {
+			top: 90px;
+		}
+		
+		@include max-screen($small_desktop) {
+			max-width: 1800px;
+			top: 70px;
+		}
+
+		@include max-screen($large_tablet) {
+			max-width: 1900px;
+			top: 50%;
+			transform: translate(-50%,-50%);
+		}
+
+		@include max-screen($large_mobile) {
+			display: none;
+		}
+
+	}
+
+	&__slider {
+		position: relative;
+		padding: 0px 5rem + 2.5rem ;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 3.5rem;
+		@include max-screen($large_mobile) {
+			padding: 0px;
+		}
+		.slider-nav {
+			margin: 0px auto;
+			margin-top: 3.5rem;
+			padding: 0px 20px;
+			@include min-screen($large_mobile) {
+				display: none;
+			}
+		}
+		.swiper {
+			&-container {
+				@include max-screen($large_mobile) {
+					padding: 0px 20px + 25px;
+				}
+			}
+			&-slide {
+				@include min-screen($large_mobile) {
+					background: #181a26;
+				}
+				&-active {
+					.tw__item {
+						opacity: 1;
+					}
+
+					.tw__item-text {
+						opacity: 1;
+					}
+				}
+				&-prev,
+				&-next {
+					.tw__item {
+						opacity: 0.4 !important;
+					}
+				}
+
+				&-prev-prev,
+				&-next-next {
+					.tw__item {
+						opacity: 0.1;
+					}
+				}
+			}
+		}
+
+		&-btn {
+			width: 5rem;
+			height: 5rem;
+			border-radius: 50%;
+			border: 1px dashed rgba(205, 180, 141, 0.3);
+			position: absolute;
+			top:  43%;
+			transform: translate(0,-50%);
+			cursor: pointer;
+			transition: all 0.3s;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@include max-screen($large_mobile) {
+				display: none;
+			}
+			svg {
+				width: 2.2rem !important;
+				height: 2.2rem !important;
+				stroke: #fff;
+				fill: transparent;
+			}
+
+			&_prev {
+				left: 0px;
+			}
+
+			&_next {
+				right: 0px;
+				svg {
+					transform: rotate(180deg);
+				}
+			}
+
+			&:hover {
+				background: $green;
+			}
+		}
+	}
+
+	&__item {
+		opacity: 0;
+		transition: opacity 0.3s;
+		&-img {
+			position: relative;
+			padding-bottom:  240 / 400 * 100% ;
+			img {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&-video {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 23px;
+			height: 33px;
+			z-index: 2;
+			background: url('/img/video.png') no-repeat;
+			background-position: center;
+			transition: all 0.2s;
+			&:hover {
+				transform: scale(1.1) translate(-50%,-50%);
+			}
+		}
+
+		&-text {
+			font-size: 1.7rem;
+			color: #d8c4b0;
+			font-weight: 300;
+			margin-top: 2rem;
+			opacity: 0;
+			transition: opacity 0.3s;
+			span {
+				color: #fff;
+				font-weight: 500;
+			}
+		}
+	}
+}

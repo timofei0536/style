@@ -1,0 +1,105 @@
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    &_column {
+        flex-direction: column;
+    }
+    &__field {
+        width: 100%;
+        &-wrap {
+            width: calc((100% - 2.2rem * 2)/ 3);
+            border-radius: 4px;
+            position: relative;
+            .inputs_column & {
+                margin-bottom: 1.5rem;
+                width: 100%;
+            }
+            @include max-screen($small_tablet) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        &::placeholder {
+            font-size: 1.8rem;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        &:not([type='submit']) {
+            padding: 0 3rem;
+            line-height: 7rem;
+            border: none;
+            border: 1px solid rgb(228, 227, 226);
+            border-radius: 4px;
+            background-color: rgb(255, 255, 255);
+            font-weight: 300;
+            font-size: 1.8rem;
+            @include max-screen($small_tablet) {
+                line-height: 6rem;
+            }
+            @include max-screen($large_mobile) {
+                line-height: 5rem;
+            }
+
+            @include max-screen($small_mobile) {
+                line-height: 5.8rem;
+            }
+
+            &:focus:not([name='phone']),
+            &:hover:not([name='phone']) {
+                &::-webkit-input-placeholder {color:transparent;}
+                &::-moz-placeholder          {color:transparent;}/* Firefox 19+ */
+                &:-moz-placeholder           {color:transparent;}/* Firefox 18- */
+                &:-ms-input-placeholder      {color:transparent;}
+            }
+        }
+
+        &[name='phone'] {
+            letter-spacing: 0.15em;
+        }
+    }
+
+
+    &__content {
+        font-size: 1.8rem;
+        color: rgb(253, 253, 253);
+        margin-bottom: 1.3rem;
+        display: block;
+        font-weight: 300;
+        .inputs_dark & {
+            color: #333;
+        }
+
+        &_hide {
+            opacity: 0;
+            @include max-screen($small_tablet) {
+                height: 0rem;
+                overflow: hidden;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    &__personal {
+        font-size: 1.4rem;
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 1.286;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        margin-top: 1.6rem;
+        max-width: 25.5rem;
+        font-weight: 300;
+        .inputs_dark & {
+            color: rgba(0,0,0,0.5);
+        }
+        @include max-screen($small_tablet) {
+            max-width: 24rem;
+        }
+
+        @include max-screen($large_mobile) {
+            margin-top: 1.8rem;
+        }
+    }
+}
+

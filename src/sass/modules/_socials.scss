@@ -1,0 +1,31 @@
+.socials {
+    &__link {
+        margin-right: 2.4rem;
+        width: 6.8rem;
+        height: 6.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(79, 81, 89);
+        border-radius: 50%;
+        transition: all 0.5s ease;
+        @include min-screen($large_tablet) {
+            
+            &:hover{
+                border: 1px solid #e2bb7c;
+                svg{
+                  fill:#e2bb7c;  
+              }
+              
+          }
+      }
+      svg{
+        width: 2.2rem;
+        fill:rgb(79, 81, 89);
+        transition: all 0.5s ease;
+    }
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+}

@@ -1,0 +1,26 @@
++b.step
+	.simple-title
+		h2
+			span СДЕЛАЙТЕ ПЕРВЫЙ ШАГ<br> К ИДЕАЛЬНОМУ СТИЛЮ
+			em.simple-title__mobile1 Оставьте заявку,  
+			em.simple-title__mobile2 чтобы связаться 
+			em.simple-title__mobile3 с Александром Беловым
+	+e.sub-title Оставьте ваши контакты в форме ниже, чтобы<br> связаться с Александром Беловым
+	+e.bonuse
+		+e.bonuse-plus
+		+e.bonuse-icon
+		+e.bonuse-content
+			p Получите полезный материал
+			span 
+				em.mobile Получите бонус: 
+				| Чек лист<br class='mobile'> <em class='desktop'>для</em> оценки своего стиля (2,5 МБ)
+	form.inputs.inputs_column(action='', autocomplete='off')
+		.inputs__field-wrap
+			span.inputs__content Ваше имя
+			input.inputs__field(type='text', name='text', required='', minlength='2', placeholder="Олег Николаевич")
+		.inputs__field-wrap
+			span.inputs__content Номер для связи*
+			input.inputs__field(type='tel', name='phone', required='' placeholder="+7 123 456-78-90")
+		.inputs__field-wrap
+			input.inputs__field.inputs__submit.btn.thank-link(type='submit', value='перезвоните мне') 
+			span.inputs__personal Нажимая на кнопку, вы даете согласие на обработку персональных данных.

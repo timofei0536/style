@@ -1,0 +1,485 @@
++b.SECTION.rates
+    .wrap#rates
+        .simple-title.simple-title_rates
+            h2
+                |  Варианты работы 
+                span С Александром Беловым
+        +e.wrap
+            +e.titles
+                +e.item
+                    p Город для шопинга  
+                +e.item
+                    p Бюджет на покупки
+                +e.item
+                    p Количество купленных вещей
+                +e.item
+                    p Количество образов
+                +e.item
+                    p Имидж-консультация<br>  с Александром Беловым
+                +e.item
+                    p Анализ гардероба
+                +e.item
+                    p Шопинг «до результата»<br>  с Александром Беловым
+                +e.item
+                    p Доработка в ателье купленных<br>  вещей до идеальной посадки
+                +e.item
+                    p Персональная цветовая<br>  палитра для подбора вещей
+                        +b.tooltip
+                            +e.SPAN.text._right
+                                | Набор цветных карточек, составленных для вашего<br> типа внешности. Идеальны для подбора подходящих<br> вам оттенков одежды
+                +e.item
+                    p Составление и печать лукбука с комплектами
+                        +b.tooltip
+                            +e.SPAN.text._right
+                                | Брошюра, в которой составлены комплекты<br> из купленных вещей. Поможет выбрать нужный<br> образ перед выходом
+                +e.item
+                    p Имиджевая фотосессия<br>  в новых образах
+                        +b.tooltip
+                            +e.SPAN.text._right
+                                | Фотографии, сделанные профессиональным<br> фотографом в новых образах
+                +e.item
+                    p Поддержка по телефону<br> или в мессенджере
+                +e.item
+                    p Дополнительные онлайн<br>  материалы по развитию вкуса
+                +e.item
+                    p Стоимость за 1 час
+                +e.item
+                    p Стоимость «под ключ»
+            +e.lists
+                +b.rates-item
+                    +e.title._online online
+                    +e.item
+                        +e.P.price-label Город<br> для шопинга
+                        p любой
+                    +e.item
+                        +e.P.price-label Бюджет<br> на покупки
+                        p без<br> ограничений
+                    +e.item
+                        +e.P.price-label Количество<br> купленных<br> вещей
+                        p до 50
+                    +e.item
+                        +e.P.price-label Количество<br> образов
+                        p до 10
+                    +e.item
+                        +e.P.price-label Имидж-<br>консультация<br> с Александром<br> Беловым
+                        p онлайн до<br> 30 минут
+                    +e.item
+                        +e.P.price-label Анализ<br> гардероба
+                        p по<br> фотографиям
+                    +e.item
+                        +e.P.price-label Шопинг<br> «до результата»<br> с Александром<br> Беловым
+                        p онлайн
+                            +b.SPAN.tooltip
+                                +e.SPAN.text._right 
+                                    | Удалённо из любой точки мира<br> по WhatsApp/Telegram
+                    +e.item
+                        +e.P.price-label Доработка в ателье<br> купленных вещей<br> до идеальной<br> посадки
+                        p по<br> фотографиям
+                    +e.item
+                        +e.P.price-label Персональная<br> цветовая палитра<br> для подбора<br> вещей
+                        p
+                            +icon('no')
+                    +e.item
+                        +e.P.price-label Составление<br> и печать лукбука<br> с комплектами
+                        p
+                            +icon('no')
+                    +e.item
+                        +e.P.price-label Имиджевая<br> фотосессия<br> в новых образах
+                        p
+                            +icon('no')
+                    +e.item
+                        +e.P.price-label Поддержка<br> по телефону или<br> в мессенджере
+                        p 1 месяц
+                    +e.item
+                        +e.P.price-label Дополнительные<br> онлайн<br> материалы по<br> развитию вкуса
+                        p
+                            +icon('yes')
+                    +e.item._price
+                        +e.price-label Стоимость<br> за 1 час
+                        +e.price
+                            p.small 9 000 ₽
+                                +b.SPAN.tooltip
+                                    +e.SPAN.text._sale._right 
+                                        | Скидка 39% при оплате<br> <span class='to-right'>до</span> <span class='sale-date'></span>
+                            p 5 000 ₽/ч
+                            
+                    +e.item._price
+                        +e.price-label Стоимость<br> "под ключ"
+                        +e.price
+                            p 24 000 ₽
+                            p <strong>15 000 ₽</strong>
+                    +e.btns
+                        span.btn(onclick='show_popup("popup2")') заказать
+                        p 
+                            span.close Развернуть:<br> что входит в услугу
+                            span.open Свернуть
+                
+                +b.rates-item
+                    +e.title._premium premium
+                    +e.item
+                        +e.P.price-label Город<br> для шопинга
+                        p Москва
+                    +e.item
+                        +e.P.price-label Бюджет<br> на покупки
+                        p от 100 000 ₽
+                    +e.item
+                        +e.P.price-label Количество<br> купленных<br> вещей
+                        p от 15 до 50
+                    +e.item
+                        +e.P.price-label Количество<br> образов
+                        p до 20
+                    +e.item
+                        +e.P.price-label Имидж-<br>консультация<br> с Александром<br> Беловым
+                        p вживую до<br> 30 минут
+                    +e.item
+                        +e.P.price-label Анализ<br> гардероба
+                        p по<br> фотографиям
+                            +e.SPAN.row-subtitle /с выездом<br> +15 000 ₽
+                    +e.item
+                        +e.P.price-label Шопинг<br> «до результата»<br> с Александром<br> Беловым
+                        p
+                            +icon('yes')
+                    +e.item
+                        +e.P.price-label Доработка в ателье<br> купленных вещей<br> до идеальной<br> посадки
+                        p 
+                            +icon('yes')
+                    +e.item
+                        +e.P.price-label Персональная<br> цветовая палитра<br> для подбора<br> вещей
+                        p по вашему<br> типажу
+                    +e.item
+                        +e.P.price-label Составление<br> и печать лукбука<br> с комплектами
+                        p
+                            +icon('no')
+                    +e.item
+                        +e.P.price-label Имиджевая<br> фотосессия<br> в новых образах
+                        p
+                            +icon('no')
+                    +e.item
+                        +e.P.price-label Поддержка<br> по телефону или<br> в мессенджере
+                        p 3 месяца
+                    +e.item
+                        +e.P.price-label Дополнительные<br> онлайн<br> материалы по<br> развитию вкуса
+                        p
+                            +icon('yes')
+                    +e.item._price
+                        +e.price-label Стоимость<br> за 1 час
+                        +e.price
+                            p 12 000 ₽
+                                +b.SPAN.tooltip
+                                    +e.SPAN.text._sale._right 
+                                        | Скидка 39% при оплате<br> <span class='to-right'>до</span> <span class='sale-date'></span>
+                            p 7 000 ₽/ч
+                    +e.item._price
+                        +e.price-label Стоимость<br> "под ключ"
+                        +e.price
+                            p 55 000 ₽
+                            p <strong>34 000 ₽</strong>
+                    +e.btns
+                        span.btn(onclick='show_popup("popup2")') заказать
+                        p 
+                            span.close Развернуть:<br> что входит в услугу
+                            span.open Свернуть
+                    
+                
+                +b.rates-item
+                    +e.title._vip VIP
+                    +e.item
+                        +e.P.price-label Город<br> для шопинга
+                        p Москва<br> / Милан
+                    +e.item
+                        +e.P.price-label Бюджет<br> на покупки
+                        p от 250 000 ₽
+                    +e.item
+                        +e.P.price-label Количество<br> купленных<br> вещей
+                        p от 15 до 100
+                    +e.item
+                        +e.P.price-label Количество<br> образов
+                        p до 50
+                    +e.item
+                        +e.P.price-label Имидж-<br>консультация<br> с Александром<br> Беловым
+                        p вживую до<br> 1 часа
+                    +e.item
+                        +e.P.price-label Анализ<br> гардероба
+                        p с выездом
+                    +e.item
+                        +e.P.price-label Шопинг<br> «до результата»<br> с Александром<br> Беловым
+                        p
+                            +icon('yes')
+                    +e.item
+                        +e.P.price-label Доработка в ателье<br> купленных вещей<br> до идеальной<br> посадки
+                        p
+                            +icon('yes')
+                    +e.item
+                        +e.P.price-label Персональная<br> цветовая палитра<br> для подбора<br> вещей
+                        p.desktop индивидуальное составление
+                        p.mobile уникальное<br> составление
+                    +e.item
+                        +e.P.price-label Составление<br> и печать лукбука<br> с комплектами
+                        p
+                            +icon('yes')
+                    +e.item
+                        +e.P.price-label Имиджевая<br> фотосессия<br> в новых образах
+                        p
+                            +icon('yes')
+                    +e.item
+                        +e.P.price-label Поддержка<br> по телефону или<br> в мессенджере
+                        p 6 месяцев
+                    +e.item
+                        +e.P.price-label Дополнительные<br> онлайн<br> материалы по<br> развитию вкуса
+                        p
+                            +icon('yes')
+                    +e.item._price
+                        +e.price-label Стоимость<br> за 1 час
+                        +e.price
+                            p 20 000 ₽
+                                +b.SPAN.tooltip
+                                    +e.SPAN.text._sale._right 
+                                        | Скидка 39% при оплате<br> <span class='to-right'>до</span> <span class='sale-date'></span>
+                            p 12 000 ₽/ч
+                    +e.item._price
+                        +e.price-label Стоимость<br> "под ключ"
+                        +e.price
+                            p 140 000 ₽
+                            p <strong>89 000 ₽</strong>
+                    +e.btns
+                        span.btn(onclick='show_popup("popup2")') заказать
+                        p 
+                            span.close Развернуть:<br> что входит в услугу
+                            span.open Свернуть
+        +e.slider
+            +b.slider-nav._dark
+                +e.arrow._prev
+                    +icon('arrow-left_mobile')
+                +e.bullets
+                +e.arrow._next
+                    +icon('arrow-right_mobile')
+            .swiper-container
+                .swiper-wrapper
+                    .swiper-slide
+                        .rates__slide-head
+                            span premium
+                            p Шопинг в Москве <br> с персональным стилистом
+                        +b.rates-item
+                            +e.item
+                                +e.P.price-label Город<br> для шопинга
+                                p Москва
+                            +e.item
+                                +e.P.price-label Бюджет<br> на покупки
+                                p от 100 000 ₽
+                            +e.item
+                                +e.P.price-label Количество<br> купленных<br> вещей
+                                p от 15 до 50
+                            +e.item
+                                +e.P.price-label Количество<br> образов
+                                p до 20
+                            +e.item
+                                +e.P.price-label Имидж-<br>консультация<br> с Александром<br> Беловым
+                                p вживую до<br> 30 минут
+                            +e.item
+                                +e.P.price-label Анализ<br> гардероба
+                                p по<br> фотографиям
+                                    +e.SPAN.row-subtitle /с выездом<br> +15 000 ₽
+                            +e.item
+                                +e.P.price-label Шопинг<br> «до результата»<br> с Александром<br> Беловым
+                                p
+                                    +icon('yes')
+                            +e.item
+                                +e.P.price-label Доработка в ателье<br> купленных вещей<br> до идеальной<br> посадки
+                                p 
+                                    +icon('yes')
+                            +e.item
+                                +e.P.price-label Персональная<br> цветовая палитра<br> для подбора<br> вещей
+                                p по вашему<br> типажу
+                            +e.item
+                                +e.P.price-label Составление<br> и печать лукбука<br> с комплектами
+                                p
+                                    +icon('no')
+                            +e.item
+                                +e.P.price-label Имиджевая<br> фотосессия<br> в новых образах
+                                p
+                                    +icon('no')
+                            +e.item
+                                +e.P.price-label Поддержка<br> по телефону или<br> в мессенджере
+                                p 3 месяца
+                            +e.item
+                                +e.P.price-label Дополнительные<br> онлайн<br> материалы по<br> развитию вкуса
+                                p
+                                    +icon('yes')
+                            +e.item._price
+                                +e.price-label Стоимость<br> за 1 час
+                                +e.price
+                                    p 12 000 ₽
+                                        +b.SPAN.tooltip
+                                            +e.SPAN.text._sale._right 
+                                                | Скидка 39% при оплате<br> <span class='to-right'>до</span> <span class='sale-date'></span>
+                                    p 7 000 ₽/ч
+                            +e.item._price
+                                +e.price-label Стоимость<br> "под ключ"
+                                +e.price
+                                    p 55 000 ₽
+                                    p <strong>34 000 ₽</strong>
+                            +e.btns
+                                span.btn(onclick='show_popup("popup2")') заказать
+                                p 
+                                    span.close Развернуть:<br> что входит в услугу
+                                    span.open Свернуть
+                    .swiper-slide
+                        .rates__slide-head
+                            span VIP
+                            p Шопинг в Москве/Милане <br> с персональным стилистом
+                        +b.rates-item
+                            +e.item
+                                +e.P.price-label Город<br> для шопинга
+                                p Москва<br> / Милан
+                            +e.item
+                                +e.P.price-label Бюджет<br> на покупки
+                                p от 250 000 ₽
+                            +e.item
+                                +e.P.price-label Количество<br> купленных<br> вещей
+                                p от 15 до 100
+                            +e.item
+                                +e.P.price-label Количество<br> образов
+                                p до 50
+                            +e.item
+                                +e.P.price-label Имидж-<br>консультация<br> с Александром<br> Беловым
+                                p вживую до<br> 1 часа
+                            +e.item
+                                +e.P.price-label Анализ<br> гардероба
+                                p с выездом
+                            +e.item
+                                +e.P.price-label Шопинг<br> «до результата»<br> с Александром<br> Беловым
+                                p
+                                    +icon('yes')
+                            +e.item
+                                +e.P.price-label Доработка в ателье<br> купленных вещей<br> до идеальной<br> посадки
+                                p
+                                    +icon('yes')
+                            +e.item
+                                +e.P.price-label Персональная<br> цветовая палитра<br> для подбора<br> вещей
+                                p.desktop индивидуальное составление
+                                p.mobile уникальное<br> составление
+                            +e.item
+                                +e.P.price-label Составление<br> и печать лукбука<br> с комплектами
+                                p
+                                    +icon('yes')
+                            +e.item
+                                +e.P.price-label Имиджевая<br> фотосессия<br> в новых образах
+                                p
+                                    +icon('yes')
+                            +e.item
+                                +e.P.price-label Поддержка<br> по телефону или<br> в мессенджере
+                                p 6 месяцев
+                            +e.item
+                                +e.P.price-label Дополнительные<br> онлайн<br> материалы по<br> развитию вкуса
+                                p
+                                    +icon('yes')
+                            +e.item._price
+                                +e.price-label Стоимость<br> за 1 час
+                                +e.price
+                                    p 20 000 ₽
+                                        +b.SPAN.tooltip
+                                            +e.SPAN.text._sale._right 
+                                                | Скидка 39% при оплате<br> <span class='to-right'>до</span> <span class='sale-date'></span>
+                                    p 12 000 ₽/ч
+                            +e.item._price
+                                +e.price-label Стоимость<br> "под ключ"
+                                +e.price
+                                    p 140 000 ₽
+                                    p <strong>89 000 ₽</strong>
+                            +e.btns
+                                span.btn(onclick='show_popup("popup2")') заказать
+                                p 
+                                    span.close Развернуть:<br> что входит в услугу
+                                    span.open Свернуть
+                    .swiper-slide
+                        .rates__slide-head
+                            span Online
+                            p Шопинг online <br> с персональным стилистом
+                        +b.rates-item
+                            +e.item
+                                +e.P.price-label Город<br> для шопинга
+                                p любой
+                            +e.item
+                                +e.P.price-label Бюджет<br> на покупки
+                                p без<br> ограничений
+                            +e.item
+                                +e.P.price-label Количество<br> купленных<br> вещей
+                                p до 50
+                            +e.item
+                                +e.P.price-label Количество<br> образов
+                                p до 10
+                            +e.item
+                                +e.P.price-label Имидж-<br>консультация<br> с Александром<br> Беловым
+                                p онлайн до<br> 30 минут
+                            +e.item
+                                +e.P.price-label Анализ<br> гардероба
+                                p по<br> фотографиям
+                            +e.item
+                                +e.P.price-label Шопинг<br> «до результата»<br> с Александром<br> Беловым
+                                p онлайн
+                                    +b.SPAN.tooltip
+                                        +e.SPAN.text._right 
+                                            | Удалённо из любой точки мира<br> по WhatsApp/Telegram
+                            +e.item
+                                +e.P.price-label Доработка в ателье<br> купленных вещей<br> до идеальной<br> посадки
+                                p по<br> фотографиям
+                            +e.item
+                                +e.P.price-label Персональная<br> цветовая палитра<br> для подбора<br> вещей
+                                p
+                                    +icon('no')
+                            +e.item
+                                +e.P.price-label Составление<br> и печать лукбука<br> с комплектами
+                                p
+                                    +icon('no')
+                            +e.item
+                                +e.P.price-label Имиджевая<br> фотосессия<br> в новых образах
+                                p
+                                    +icon('no')
+                            +e.item
+                                +e.P.price-label Поддержка<br> по телефону или<br> в мессенджере
+                                p 1 месяц
+                            +e.item
+                                +e.P.price-label Дополнительные<br> онлайн<br> материалы по<br> развитию вкуса
+                                p
+                                    +icon('yes')
+                            +e.item._price
+                                +e.price-label Стоимость<br> за 1 час
+                                +e.price
+                                    p 9 000 ₽
+                                        +b.SPAN.tooltip
+                                            +e.SPAN.text._sale._right 
+                                                | Скидка 39% при оплате<br> <span class='to-right'>до</span> <span class='sale-date'></span>
+                                    p 5 000 ₽/ч
+                            
+                            +e.item._price
+                                +e.price-label Стоимость<br> "под ключ"
+                                +e.price
+                                    p 24 000 ₽
+                                    p <strong>15 000 ₽</strong>
+                            +e.btns
+                                span.btn(onclick='show_popup("popup2")') заказать
+                                p 
+                                    span.close Развернуть:<br> что входит в услугу
+                                    span.open Свернуть
+    +b.SECTION.contact  
+        .wrap
+            .simple-title.simple-title_contacts
+                h2 
+                    | Ост<span>а</span>вьте заявку, и мы<br> поможем подобрать вам<br> наиболее подходящий<br> форм<span>а</span>т шопинга
+            +b.FORM.inputs(action='', autocomplete='off')
+                +e.field-wrap
+                    span.inputs__content
+                        | Ваше имя
+                    input.inputs__field(type='text', name='text', required='', minlength='2', placeholder="Олег Николаевич")
+                        
+                +e.field-wrap
+                    span.inputs__content
+                                | Номер для связи*
+                    input.inputs__field(type='tel', name='phone', required='' placeholder="+7 123 456-78-90")
+                        
+                +e.field-wrap
+                    span.inputs__content.inputs__content_hide 
+                                | кнопка
+                    input.btn.inputs__submit.inputs__field.thank-link(type='submit', value='Подобрать формат шопинга') 
+                    span.inputs__personal
+                            | Нажимая на кнопку, вы даете согласие на обработку персональных данных.

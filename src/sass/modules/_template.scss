@@ -1,0 +1,151 @@
+.template {
+	@include max-screen($small_tablet) {
+		background: #f6f5f4;
+	}
+	&__wrap {
+		margin-top: -17.5rem;
+		margin-bottom: -17.5rem;
+		background: #f6f5f4;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 3.8rem;
+		padding-bottom: 5rem;
+		padding-left: 6.7rem;
+		padding-right: 12rem;
+		box-shadow: 0px 49px 106px 0px rgba(0, 4, 7, 0.1);
+		min-height: 35rem;
+		@include max-screen($large_tablet) {
+			padding-right: 6.7rem;
+		}
+
+		@include max-screen($small_tablet) {
+			flex-direction: column;
+			margin-top: 0rem;
+			margin-bottom: -6rem;
+			box-shadow: none;
+			background: transparent;
+			padding: 0px;
+			padding-top: 8rem;
+		}
+
+		@include max-screen($large_mobile) {
+			padding-top: 4rem;
+		}
+	}
+
+	&__right {
+		max-width: 54rem;
+		padding-top: 1.2rem;
+
+		@include max-screen($large_tablet) {
+			margin-left: 3rem;
+		}
+
+		@include max-screen($small_tablet) {
+			width: 100%;
+			background: $green;
+			margin-left: 0px;
+			padding-bottom: 3.5rem;
+			padding-left: 5rem;
+			padding-right: 5rem;
+			max-width: 100%;
+		}
+		@include max-screen($large_mobile) {
+			padding-top: 3.5rem;
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+
+	}
+
+	&__img {
+		flex-shrink: 0;
+		width: 39%;
+		@include max-screen($small_tablet) {
+			width: 100%;
+		}
+		&_desktop {
+			@include max-screen($small_tablet) {
+				display: none;
+			}
+		}
+
+		&_mobile {
+			img {
+				width: 100%;
+
+			}
+			@include min-screen($small_tablet) {
+				display: none;
+			}
+		}		
+	}
+
+	&__title {
+		font-family: "Tragan";
+		font-weight: 400;
+		font-size: 3rem;
+		line-height: 4.7rem;
+		text-align: center;
+		background: $green;
+		margin-bottom: 3.3rem;
+		line-height: 1;
+		padding-top: 1.2rem;
+		padding-bottom: 0.32rem;
+
+		@include max-screen($small_tablet) {
+			text-align: left;
+			padding-top: 0rem;
+			margin-top: 2.6rem;
+			margin-bottom: 1.2rem;
+			margin-left: -0.3rem;
+		}
+
+		@include max-screen($large_mobile) {
+			font-size: 1.9rem;
+			margin-top: 0px;
+			white-space: nowrap;
+		}
+	}
+
+	&__text {
+		font-size: 2.4rem;
+		font-weight: 300;
+		line-height: 30 / 24 * 1;
+		position: relative;
+		letter-spacing: 20 / 1000 * 1em;
+		@include max-screen($small_tablet) {
+			padding-left: 2rem;
+		}
+
+		@include max-screen($large_mobile) {
+			font-size: 1.8rem;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			width: 1px;
+			height: 82%;
+			top: 10%;
+			left: -6rem;
+			background: $green;
+			@include max-screen($large_tablet) {
+				display: none;
+			}
+
+			@include max-screen($small_tablet) {
+				display: block;
+				background: #fff;
+				left: 0px;
+			}
+
+			@include max-screen($large_mobile) {
+				height: 90%;
+				top: 5%;
+			}
+		}
+	}
+}
+
+

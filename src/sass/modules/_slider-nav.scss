@@ -1,0 +1,41 @@
+.slider-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 10px;
+	&__bullets {
+		display: flex;
+		align-items: center;
+		.swiper-pagination-bullet {
+			margin: 0px 5px;
+			width: 9px;
+			height: 9px;
+			background: #cccccc;
+			opacity: 1;
+			.slider-nav_dark & {
+				background: #dee8f1;
+			}
+			&-active {
+				background: $green !important;
+			}
+		}
+	}
+
+	&__arrow {
+		cursor: pointer;
+		svg {
+			width: 25px;
+			height: 25px;
+			.slider-nav_dark & {
+				fill: #fff;
+			}
+		}
+
+		&:hover {
+			svg {
+				fill: $green;
+			}
+		}
+	}
+
+}

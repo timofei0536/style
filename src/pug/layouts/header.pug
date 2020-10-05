@@ -1,0 +1,15 @@
++b.HEADER.header(class=header.class)
+	.wrap
+		+e.wrap
+			if ( !header.thank )
+				+e.IMG.logo(src='/img/logo.png')
+			else 
+				+e.IMG.logo(src='/img/logo--dark.png')
+
+			+e.text
+				p Александр белов
+				span Международный эксперт по стилю
+			if ( !header.thank )
+				+e.phone
+					a(href='tel:+79691009955') +7 969 100 99 55
+					+b.SPAN.btn._empty._green(onclick='show_popup("popup2")') Обратный звонок
